@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 public class PoisonTridentItem extends TridentItem {
 
     private static final int POISON_DURATION_TICKS = 100; // 5 seconds
-    private static final int POISON_AMPLIFIER = 0;
+    private static final int POISON_AMPLIFIER = 2;
 
     public PoisonTridentItem(Properties properties) {
         super(properties);
