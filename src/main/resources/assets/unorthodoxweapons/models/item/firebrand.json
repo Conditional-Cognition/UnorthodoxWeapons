@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": { "layer0": "dndweapons:item/T_Axe_Unique1" }
+}
