@@ -3,11 +3,5 @@
 
   "item.unorthodoxweapons.jungle_spear": "Jungle Spear",
   "item.unorthodoxweapons.kick_gun": "Kick Gun",
-
-  "item.unorthodoxweapons.wooden_cleaver": "Wooden Cleaver",
-  "item.unorthodoxweapons.stone_cleaver": "Stone Cleaver",
-  "item.unorthodoxweapons.iron_cleaver": "Iron Cleaver",
-  "item.unorthodoxweapons.gold_cleaver": "Gold Cleaver",
-  "item.unorthodoxweapons.diamond_cleaver": "Diamond Cleaver",
-  "item.unorthodoxweapons.netherite_cleaver": "Netherite Cleaver"
+  "item.unorthodoxweapons.firebrand": "Firebrand"
 }
