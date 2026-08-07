@@ -22,7 +22,7 @@ public class ModTabs {
                     .icon(() -> ModItems.FIREBRAND.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.POISON_TRIDENT.get());
-                        output.accept(ModItems.KICK_GUN.get());
+                        output.accept(ModItems.ADMIN_TOOL.get());
                         output.accept(Util.make(new ItemStack(ModItems.FIREBRAND.get()), stack -> stack.enchant(parameters.holders().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT), 5)));
                     }).build());
 }

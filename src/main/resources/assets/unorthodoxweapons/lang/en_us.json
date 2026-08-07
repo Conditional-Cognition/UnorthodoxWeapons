@@ -2,6 +2,7 @@
   "itemGroup.unorthodoxweapons": "Unorthodox Weapons",
 
   "item.unorthodoxweapons.jungle_spear": "Jungle Spear",
-  "item.unorthodoxweapons.kick_gun": "Kick Gun",
+  "item.unorthodoxweapons.admin_tool": "Admin Tool",
+  "item.unorthodoxweapons.admin_tool.desc": "Doesn't seem to work yet... (function is work in progress)",
   "item.unorthodoxweapons.firebrand": "Firebrand"
 }
