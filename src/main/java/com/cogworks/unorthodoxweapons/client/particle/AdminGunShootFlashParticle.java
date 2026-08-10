@@ -21,7 +21,14 @@ public class AdminGunShootFlashParticle extends TextureSheetParticle {
 
     @Override
     public void tick() {
-        super.tick();
+        this.xo = this.x;
+        this.yo = this.y;
+        this.zo = this.z;
+
+        if (this.age++ >= this.lifetime) {
+            this.remove();
+        }
+
         float progress = (float) age / (float) lifetime;
         this.quadSize = initialSize * (1.0f - progress);
         if (this.quadSize <= 0.01f) {

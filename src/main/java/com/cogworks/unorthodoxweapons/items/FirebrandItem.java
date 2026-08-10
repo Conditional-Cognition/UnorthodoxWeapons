@@ -3,6 +3,7 @@ package com.cogworks.unorthodoxweapons.items;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.item.*;
@@ -46,5 +47,11 @@ public class FirebrandItem extends AxeItem {
         tooltipComponents.add(Component.translatable("item.unorthodoxweapons.firebrand.desc"));
         tooltipComponents.add(Component.translatable("item.unorthodoxweapons.firebrand.desc2"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
+
+    @Override
+    public boolean hurtEnemy(@NotNull ItemStack stack, LivingEntity target, @NotNull LivingEntity attacker) {
+        target.igniteForSeconds(20);
+        return super.hurtEnemy(stack, target, attacker);
     }
 }
