@@ -2,7 +2,15 @@
   "itemGroup.unorthodoxweapons": "Unorthodox Weapons",
 
   "item.unorthodoxweapons.jungle_spear": "Jungle Spear",
+  "item.unorthodoxweapons.jungle_spear.desc": "Made as a testing item. Best not to use.",
   "item.unorthodoxweapons.admin_tool": "Admin Tool",
-  "item.unorthodoxweapons.admin_tool.desc": "Doesn't seem to work yet... (function is work in progress)",
-  "item.unorthodoxweapons.firebrand": "Firebrand"
+  "item.unorthodoxweapons.admin_tool.desc": "Has 2 Modes listed below:",
+  "item.unorthodoxweapons.admin_tool.desc2": "    Kill/Kick: Attack kills whatever you're looking at.",
+  "item.unorthodoxweapons.admin_tool.desc3": "    Break/Grab: Grabs whatever block you're looking at and gives you a copy.",
+  "item.unorthodoxweapons.firebrand": "Firebrand",
+  "item.unorthodoxweapons.firebrand.desc": "Use Key throws a blaze fireball in look direction.",
+  "item.unorthodoxweapons.firebrand.desc2": "Passively ignites hit targets on melee",
+
+  "key.categories.unorthodoxweapons": "Unorthodox Weapons",
+  "key.unorthodoxweapons.admin_radial": "Open Admin Radial Menu"
 }

@@ -1,5 +1,6 @@
 package com.cogworks.unorthodoxweapons;
 
+import com.cogworks.unorthodoxweapons.items.admin.AdminModeAttachment;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,6 +21,8 @@ public class UnorthodoxWeapons {
 
     public UnorthodoxWeapons(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+        AdminModeAttachment.register(modEventBus);
+        ModParticles.PARTICLE_TYPES.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModTabs.CREATIVE_MODE_TABS.register(modEventBus);

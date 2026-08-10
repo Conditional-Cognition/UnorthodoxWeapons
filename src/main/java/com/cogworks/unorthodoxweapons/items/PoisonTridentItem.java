@@ -1,6 +1,7 @@
 package com.cogworks.unorthodoxweapons.items;
 
 import com.cogworks.unorthodoxweapons.entities.PoisonThrownTrident;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -10,10 +11,14 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.TridentItem;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 public class PoisonTridentItem extends TridentItem {
 
@@ -61,5 +66,11 @@ public class PoisonTridentItem extends TridentItem {
         }
 
         player.awardStat(Stats.ITEM_USED.get(this));
+    }
+
+    @Override
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("item.unorthodoxweapons.jungle_spear.desc"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
