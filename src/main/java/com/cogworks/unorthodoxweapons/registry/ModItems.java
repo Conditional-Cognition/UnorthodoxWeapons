@@ -17,18 +17,18 @@ public class ModItems {
     public static final DeferredItem<PoisonTridentItem> POISON_TRIDENT = ITEMS.register(
             "jungle_spear",
             () -> new PoisonTridentItem(new Item.Properties().durability(250))); */
-    // Admin Tool
+    // Admin Tool (dmbliz)
     public static final DeferredItem<Item> ADMIN_TOOL =
             ITEMS.registerItem("admin_tool", AdminToolItem::new, new Item.Properties());
 
-    // Firebrand
+    // Firebrand (me!)
     public static final DeferredItem<FirebrandItem> FIREBRAND = ITEMS.register(
             "firebrand",
             () -> new FirebrandItem(Tiers.NETHERITE, new Item.Properties()
                     .attributes(AxeItem.createAttributes(Tiers.NETHERITE, 8, -3.0f))));
     public static final DeferredHolder<Item, Item> FIREBRAND_COMPONENT =
             ITEMS.register("firebrand_component", () -> new FirebrandComponentItem(new Item.Properties()));
-    // longunis
+    // longunis (monkie55)
     public static final DeferredItem<LonginusSpearItem> SPEAR_OF_LONGINUS = ITEMS.register(
             "spear_of_longinus",
             () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
@@ -37,7 +37,7 @@ public class ModItems {
             "lance_of_longinus_model",
             () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
     );
-    // mochi_hammer
+    // mochi_hammer (opiuppenguin)
     public static final DeferredItem<MochiHammerItem> MOCHI_HAMMER = ITEMS.register(
             "mochi_hammer",
             () -> new MochiHammerItem(Tiers.WOOD,
@@ -46,5 +46,10 @@ public class ModItems {
                             .stacksTo(1)
                             .durability(100)
             )
+    );
+    // block hole (megamanta_365)
+    public static final DeferredItem<LonginusSpearItem> BLOCK_HOLE_MODEL = ITEMS.register(
+            "block_hole_model",
+            () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
     );
 }
