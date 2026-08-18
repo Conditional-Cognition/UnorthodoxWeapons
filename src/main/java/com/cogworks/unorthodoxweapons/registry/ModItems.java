@@ -4,6 +4,7 @@ import com.cogworks.unorthodoxweapons.UnorthodoxWeapons;
 import com.cogworks.unorthodoxweapons.items.*;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -35,5 +36,15 @@ public class ModItems {
     public static final DeferredItem<LonginusSpearItem> LANCE_OF_LONGINUS = ITEMS.register(
             "lance_of_longinus_model",
             () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
+    );
+    // mochi_hammer
+    public static final DeferredItem<MochiHammerItem> MOCHI_HAMMER = ITEMS.register(
+            "mochi_hammer",
+            () -> new MochiHammerItem(Tiers.WOOD,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(Tiers.WOOD, 5.0F, -2.4F))
+                            .stacksTo(1)
+                            .durability(100)
+            )
     );
 }

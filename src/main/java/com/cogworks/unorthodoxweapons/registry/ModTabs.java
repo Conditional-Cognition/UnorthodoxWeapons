@@ -27,5 +27,6 @@ public class ModTabs {
                         output.accept(ModItems.ADMIN_TOOL.get());
                         output.accept(ModItems.FIREBRAND.get());
                         output.accept(ModItems.FIREBRAND_COMPONENT.get());
+                        output.accept(ModItems.MOCHI_HAMMER.get());
                     }).build());
 }

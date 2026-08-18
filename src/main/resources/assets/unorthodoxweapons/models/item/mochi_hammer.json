@@ -1,13 +1,13 @@
 {
   "loader": "neoforge:separate_transforms",
   "base": {
-    "parent": "unorthodoxweapons:item/spear_of_longinus_model"
+    "parent": "unorthodoxweapons:item/mochi_hammer_model"
   },
   "perspectives": {
     "gui": {
       "parent": "minecraft:item/generated",
       "textures": {
-        "layer0": "unorthodoxweapons:item/spear_of_longinus_item"
+        "layer0": "unorthodoxweapons:item/mochi_hammer_item"
       }
     }
   }

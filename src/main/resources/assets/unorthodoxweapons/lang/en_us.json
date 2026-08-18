@@ -10,10 +10,17 @@
   "item.unorthodoxweapons.firebrand": "Firebrand",
   "item.unorthodoxweapons.firebrand.desc": "Use Key throws a blaze fireball in look direction.",
   "item.unorthodoxweapons.firebrand.desc2": "Passively ignites hit targets on melee",
+  "item.unorthodoxweapons.firebrand_component": "Firebrand Component",
   "item.unorthodoxweapons.spear_of_longinus": "Spear of Longinus",
   "item.unorthodoxweapons.spear_of_longinus.desc": "Breaks Shields upon melee or ranged attacks",
   "item.unorthodoxweapons.spear_of_longinus.desc2": "Returns when thrown (automatically enchanted with Loyalty)",
-  "item.unorthodoxweapons.beans": "",
+  "item.unorthodoxweapons.mochi_hammer": "Mochi Hammer",
+  "item.unorthodoxweapons.mochi_hammer.desc": "Makes targets drop a random inventory item upon critical hit",
+
+  "item.unorthodoxweapons.e": "E",
+  "item.unorthodoxweapons.e.desc": "A",
+  "item.unorthodoxweapons.e.desc2": "Sports",
+  "item.unorthodoxweapons.e.desc3": "It's in the game",
 
   "entity.unorthodoxweapons.thrown_longinus_spear": "Thrown Spear of Longinus",
 
