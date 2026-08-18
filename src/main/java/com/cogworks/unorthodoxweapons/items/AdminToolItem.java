@@ -35,6 +35,8 @@ public class AdminToolItem extends Item {
     @Override
     public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.translatable("item.unorthodoxweapons.admin_tool.desc"));
+        tooltipComponents.add(Component.translatable("item.unorthodoxweapons.admin_tool.desc2"));
+        tooltipComponents.add(Component.translatable("item.unorthodoxweapons.admin_tool.desc3"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

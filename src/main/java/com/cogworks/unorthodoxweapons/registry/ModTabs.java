@@ -1,16 +1,17 @@
 package com.cogworks.unorthodoxweapons.registry;
 
-import com.cogworks.unorthodoxweapons.UnorthodoxWeapons;
-import net.minecraft.Util;
+import com.cogworks.unorthodoxweapons.UnorthodoxWeapons;/*
+import net.minecraft.Util;*/
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.CreativeModeTabs;/*
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.enchantment.Enchantments;*/
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+@SuppressWarnings("unused")
 public class ModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UnorthodoxWeapons.MODID);
@@ -21,7 +22,8 @@ public class ModTabs {
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> ModItems.FIREBRAND.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(ModItems.POISON_TRIDENT.get());
+                        //output.accept(ModItems.POISON_TRIDENT.get());
+                        output.accept(ModItems.SPEAR_OF_LONGINUS.get());
                         output.accept(ModItems.ADMIN_TOOL.get());
                         output.accept(ModItems.FIREBRAND.get());
                         output.accept(ModItems.FIREBRAND_COMPONENT.get());

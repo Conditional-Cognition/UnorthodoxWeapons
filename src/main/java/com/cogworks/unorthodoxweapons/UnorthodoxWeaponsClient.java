@@ -1,11 +1,13 @@
 package com.cogworks.unorthodoxweapons;
-
+/*
 import com.cogworks.unorthodoxweapons.registry.ModEntities;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.ThrownTridentRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.projectile.ThrownTrident;
+import net.minecraft.world.entity.projectile.ThrownTrident;*/
+import com.cogworks.unorthodoxweapons.client.render.CustomTridentRenderer;
+import com.cogworks.unorthodoxweapons.registry.ModEntities;
+import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -16,7 +18,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 @Mod(value = UnorthodoxWeapons.MODID, dist = Dist.CLIENT)
 @EventBusSubscriber(modid = UnorthodoxWeapons.MODID, value = Dist.CLIENT)
@@ -27,12 +29,13 @@ public class UnorthodoxWeaponsClient {
     }
 
     private void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(ModEntities.POISON_THROWN_TRIDENT.get(), context -> new ThrownTridentRenderer(context) {
+        /* event.registerEntityRenderer(ModEntities.POISON_THROWN_TRIDENT.get(), context -> new ThrownTridentRenderer(context) {
             @Override
             public @NotNull ResourceLocation getTextureLocation(@NotNull ThrownTrident entity) {
                 return ResourceLocation.fromNamespaceAndPath(UnorthodoxWeapons.MODID, "textures/entity/jungle_spear.png");
             }
-        });
+        }); */
+        event.registerEntityRenderer(ModEntities.LONGINUS_LANCE.get(), CustomTridentRenderer::new);
     }
 
     @SubscribeEvent
