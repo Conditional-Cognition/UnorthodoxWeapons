@@ -2,10 +2,7 @@ package com.cogworks.unorthodoxweapons.registry;
 
 import com.cogworks.unorthodoxweapons.UnorthodoxWeapons;
 import com.cogworks.unorthodoxweapons.items.*;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -21,7 +18,7 @@ public class ModItems {
     public static final DeferredItem<Item> ADMIN_TOOL =
             ITEMS.registerItem("admin_tool", AdminToolItem::new, new Item.Properties());
 
-    // Firebrand (me!)
+    // Firebrand (NinjaBoy1840)
     public static final DeferredItem<FirebrandItem> FIREBRAND = ITEMS.register(
             "firebrand",
             () -> new FirebrandItem(Tiers.NETHERITE, new Item.Properties()
@@ -31,11 +28,14 @@ public class ModItems {
     // longunis (monkie55)
     public static final DeferredItem<LonginusSpearItem> SPEAR_OF_LONGINUS = ITEMS.register(
             "spear_of_longinus",
-            () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
+            () -> new LonginusSpearItem(new Item.Properties()
+                    .stacksTo(1)
+                    .attributes(TridentItem.createAttributes())
+            )
     );
-    public static final DeferredItem<LonginusSpearItem> LANCE_OF_LONGINUS = ITEMS.register(
+    public static final DeferredItem<UnobtainableItem> LANCE_OF_LONGINUS = ITEMS.register(
             "lance_of_longinus_model",
-            () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
+            () -> new UnobtainableItem(new Item.Properties().stacksTo(1))
     );
     // mochi_hammer (opiuppenguin)
     public static final DeferredItem<MochiHammerItem> MOCHI_HAMMER = ITEMS.register(
@@ -47,9 +47,19 @@ public class ModItems {
                             .durability(100)
             )
     );
-    // block hole (megamanta_365)
-    public static final DeferredItem<LonginusSpearItem> BLOCK_HOLE_MODEL = ITEMS.register(
+    // block hole (Megamanta_365)
+    public static final DeferredItem<UnobtainableItem> BLOCK_HOLE_MODEL = ITEMS.register(
             "block_hole_model",
-            () -> new LonginusSpearItem(new Item.Properties().stacksTo(1))
+            () -> new UnobtainableItem(new Item.Properties().stacksTo(1))
     );
+    public static final DeferredItem<UnobtainableItem> BLOCK_HOLE_PROJECTILE_MODEL = ITEMS.register(
+            "block_hole_projectile_model",
+            () -> new UnobtainableItem(new Item.Properties().stacksTo(1))
+    );
+    public static final DeferredItem<BlockHoleLauncherItem> BLOCK_HOLE_LAUNCHER = ITEMS.register(
+            "block_hole_launcher",
+            () -> new BlockHoleLauncherItem(new Item.Properties().stacksTo(1))
+    );
+    // Gasoline (Cndtnl_Cognition)
+    // new mod, gonna be required lmao
 }

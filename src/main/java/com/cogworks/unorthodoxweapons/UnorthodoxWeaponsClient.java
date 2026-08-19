@@ -5,6 +5,8 @@ import com.cogworks.unorthodoxweapons.registry.ModEntities;
 import net.minecraft.client.renderer.entity.ThrownTridentRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.projectile.ThrownTrident;*/
+import com.cogworks.unorthodoxweapons.client.render.BlockHoleProjectileRenderer;
+import com.cogworks.unorthodoxweapons.client.render.BlockHoleRenderer;
 import com.cogworks.unorthodoxweapons.client.render.CustomTridentRenderer;
 import com.cogworks.unorthodoxweapons.registry.ModEntities;
 import net.minecraft.client.Minecraft;
@@ -36,6 +38,8 @@ public class UnorthodoxWeaponsClient {
             }
         }); */
         event.registerEntityRenderer(ModEntities.LONGINUS_LANCE.get(), CustomTridentRenderer::new);
+        event.registerEntityRenderer(ModEntities.BLOCK_HOLE.get(), BlockHoleRenderer::new);
+        event.registerEntityRenderer(ModEntities.BLOCK_HOLE_PROJECTILE.get(), BlockHoleProjectileRenderer::new);
     }
 
     @SubscribeEvent

@@ -3,6 +3,8 @@ package com.cogworks.unorthodoxweapons.registry;
 import com.cogworks.unorthodoxweapons.UnorthodoxWeapons;
 //import com.cogworks.unorthodoxweapons.entities.PoisonThrownTrident;
 
+import com.cogworks.unorthodoxweapons.entities.BlockHoleEntity;
+import com.cogworks.unorthodoxweapons.entities.BlockHoleProjectile;
 import com.cogworks.unorthodoxweapons.entities.ThrownLonginusSpear;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType; /*
@@ -24,6 +26,19 @@ public class ModEntities {
                     .build(id.getPath())); */
     public static final DeferredHolder<EntityType<?>, EntityType<ThrownLonginusSpear>> LONGINUS_LANCE =
             ENTITY_TYPES.register("thrown_longinus_spear", id -> EntityType.Builder.of(ThrownLonginusSpear::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .clientTrackingRange(4)
+                    .updateInterval(20)
+                    .build(id.getPath()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BlockHoleEntity>> BLOCK_HOLE =
+            ENTITY_TYPES.register("block_hole", id -> EntityType.Builder.of(BlockHoleEntity::new, MobCategory.MISC)
+                    .sized(5.0f, 5.0f)
+                    .clientTrackingRange(4)
+                    .updateInterval(20)
+                    .build(id.getPath()));
+    public static final DeferredHolder<EntityType<?>, EntityType<BlockHoleProjectile>> BLOCK_HOLE_PROJECTILE =
+            ENTITY_TYPES.register("block_hole_projectile", id -> EntityType.Builder.of(BlockHoleProjectile::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f)
                     .clientTrackingRange(4)
                     .updateInterval(20)

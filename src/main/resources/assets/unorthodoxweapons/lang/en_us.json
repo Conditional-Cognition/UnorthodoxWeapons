@@ -16,6 +16,10 @@
   "item.unorthodoxweapons.spear_of_longinus.desc2": "Returns when thrown (automatically enchanted with Loyalty)",
   "item.unorthodoxweapons.mochi_hammer": "Mochi Hammer",
   "item.unorthodoxweapons.mochi_hammer.desc": "Makes targets drop a random inventory item upon critical hit",
+  "item.unorthodoxweapons.block_hole_launcher": "Block Hole Launcher",
+  "item.unorthodoxweapons.block_hole_launcher.desc": "Self Explanatory. Lasts for 10 seconds.",
+  "item.unorthodoxweapons.block_hole_launcher.desc2": "Pulls in living entities for 30 blocks and damages them for 5.",
+
 
   "item.unorthodoxweapons.e": "E",
   "item.unorthodoxweapons.e.desc": "A",
@@ -25,5 +29,6 @@
   "entity.unorthodoxweapons.thrown_longinus_spear": "Thrown Spear of Longinus",
 
   "key.categories.unorthodoxweapons": "Unorthodox Weapons",
-  "key.unorthodoxweapons.admin_radial": "Open Admin Radial Menu"
+  "key.unorthodoxweapons.admin_radial": "Open Admin Radial Menu",
+  "item.unorthodoxweapons.unobtainble.desc": "noe"
 }
